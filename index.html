@@ -2,192 +2,200 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M SALIH KC</title>
-    <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>portfolio mskc</title>
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://kit.fontawesome.com/e7c48b01b5.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+  <!-- -------------------------------  Header start ----------------------------------------------------------------------->
+   <div id="hero-bg" class="headerbg"></div>
+  <header>
+    <div class="container">
+      <nav>
+        <img src="images/logo.png" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Service</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Web Designer</p>
+        <h1>Hi, I'm <span>Salih</span><br>From God's Own Country</h1>
+      </div>
+    </div>
+  </header>
+  <!-- -------------------------------  Header end ----------------------------------------------------------------------->
 
-    <!-- HEADER -->
-    <header class="header">
-        <a href="#" class="logo">Salih</a>
-        <nav class="navbar">
-            <a href="#home" class="active">Home</a>
-            <a href="#about">About</a>
-            <a href="#skills">Skills</a>
-            <a href="#works">Works</a>
-            <a href="#education">Education</a>
-            <a href="#contact">Contact Me</a>
-        </nav>
-        <i class='bx bx-menu' id="menu"></i>
-    </header>
-    <!-- HOMEPAGE -->
-    <section class="home" id="home">
-        <div class="text-content">
-            <h2>M Salih Kc</h2>
-            <h5>WEB DESIGNER</h5>
-            <p>A passionate web designer specializes in creating visually stunning, functional websites that captivate
-                and convert users. Blend aesthetic design with cutting-edge technology to create seamless,
-                responsive, and user-friendly websites, assisting small businesses, startups, and established companies
-                in establishing their brand online.</p>
-            <div class="social-media">
-                <a
-                    href="https://www.linkedin.com/in/muhammed-salih-kc-881300215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
-                        class='bx bxl-linkedin'></i></a>
-                <a href="https://www.instagram.com/m____s____k__c/"><i class='bx bxl-instagram'></i></a>
-                <a href="https://wa.me\+919745524214"><i class='bx bxl-whatsapp'></i></a>
-                <a href="mailto:mskc9539@gmail.com"><i class='bx bx-envelope'></i></a>
-            </div>
-            <button class="btn cv">Download C.V</button>
+  <!-- -------------------------------  About start ----------------------------------------------------------------------->
+  <section id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="images/user.png">
         </div>
-        <div class="image-cover">
-            <div class="image"></div>
-            <div class="background"></div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>A passionate web designer specializes in creating visually stunning, functional websites that captivate and
+            convert users. Blend aesthetic design with cutting-edge technology to create seamless, responsive, and
+            user-friendly websites, assisting small businesses, startups, and established companies in establishing
+            their brand online.</p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>Web Designing</span><br>Designing Web pages</li>
+              <li><span>Web Developing</span><br>Developing Web pages</li>
+              <li><span>M S Office</span><br>Documentations and Presentations</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>2024 - Current</span><br>Lorem ipsum dolor sit amet</li>
+              <li><span>2020 - 2024</span><br>Lorem ipsum dolor sit amet</li>
+              <li><span>2018 - 2020</span><br>Lorem ipsum dolor sit amet</li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2024</span><br>Wafy Course - Ongoing</li>
+              <li><span>2024</span><br>Bachelor of Computer Application - Ongoing</li>
+              <li><span>2022</span><br>Computer Science 12th Grade from CBSE </li>
+            </ul>
+          </div>
         </div>
-    </section>
-    <!-- ABOUT-PAGE -->
-    <section class="about" id="about">
-        <div class="about-img-cover">
-            <div class="image-content">
-                <h2>M Salih Kc</h2>
-                <h5>WEBSITE DESIGNER</h5>
-                <img src="images/profile_enhance.jpg" alt="">
-            </div>
+      </div>
+    </div>
+  </section>
+  <!-- -------------------------------  About end ----------------------------------------------------------------------->
+
+  <!-- -------------------------------  services start ----------------------------------------------------------------------->
+  <section id="services">
+    <div class="container">
+      <h1 class="sub-title">My services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Creating visually appealing and user-friendly websites that enhance user experience and effectively
+            communicate your brand message.</p>
+          <a href="#">Lern more</a>
         </div>
-        <div class="about-text-content">
-            <h3 class="title"><i class='bx bx-user'></i>ABOUT</h3>
-            <p>Welcome to my digital portfolio! I am a passionate and creative web designer dedicated to crafting
-                visually stunning and highly functional websites. With a keen eye for detail and a deep understanding of
-                user experience, I transform ideas into engaging online presences that captivate and convert. Whether
-                you're a small business looking to establish your brand online, a startup aiming to stand out in a
-                crowded market, or an established company in need of a digital refresh, I am here to help. Explore my
-                work to see how I blend aesthetic design with cutting-edge technology to create seamless, responsive,
-                and user-friendly websites. Let's bring your vision to life on the web!</p>
-            <div class="social-media">
-                <a href="https://www.linkedin.com/in/muhammed-salih-kc-881300215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin'></i></a>
-                <a href="https://www.instagram.com/m____s____k__c/"><i class='bx bxl-instagram'></i></a>
-                <a href="https://wa.me\+919745524214"><i class='bx bxl-whatsapp'></i></a>
-                <a href="mailto:mskc9539@gmail.com"><i class='bx bx-envelope'></i></a>
-            </div>
-            <button onclick="readmore()" class="btn">Read More</button>
+        <div>
+          <i class="fa-solid fa-gears"></i>
+          <h2>M S Word</h2>
+          <p>Crafting professional documents, reports, and presentations with precise formatting, ensuring clarity and
+            consistency.</p>
+          <a href="#">Lern more</a>
         </div>
-    </section>
-    <!-- SKILL-PAGE -->
-    <section class="skills" id="skills">
-        <h3 class="title"><i class='bx bx-user'></i>SKILLS</h3>
-        <div class="skill-container">
-            <div class="skill-content">
-                <i class='bx bx-code-alt'></i>
-                <h5>WEB DESIGNER</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eum eligendi itaque maxime. Maiores, iure
-                    Lorem ipsum dolor sit amet..</p>
-                <button onclick="readmore()" class="btn">Read More</button>
-            </div>
-            <div class="skill-content">
-                <i class='bx bxs-file-doc'></i>
-                <h5>M S WORD</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eum eligendi itaque maxime. Maiores, iure
-                    Lorem ipsum dolor sit amet..</p>
-                <button onclick="readmore()" class="btn">Read More</button>
-            </div>
-            <div class="skill-content">
-                <i class='bx bx-spreadsheet'></i>
-                <h5>M S EXCEL</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eum eligendi itaque maxime. Maiores, iure
-                    Lorem ipsum dolor sit amet..</p>
-                <button onclick="readmore()" class="btn">Read More</button>
-            </div>
-            <div class="skill-content">
-                <i class='bx bxs-slideshow'></i>
-                <h5>M S POWERPOINT</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id eum eligendi itaque maxime. Maiores, iure
-                    Lorem ipsum dolor sit amet..</p>
-                <button onclick="readmore()" class="btn">Read More</button>
-            </div>
+        <div>
+          <i class="fa-solid fa-window-restore"></i>
+          <h2>M S Excel</h2>
+          <p>Developing complex spreadsheets for data analysis, financial modeling, and streamlined reporting to boost
+            productivity and insights.</p>
+          <a href="#">Lern more</a>
         </div>
-    </section>
-    <!-- PORTFOLIO -->
-    <section class="works" id="works">
-        <h3 class="title"><i class='bx bx-user'></i>PORTFOLIO</h3>
-        <div class="work-container">
-            <div class="work-content">
-                <img src="images/masa_web.png" alt="">
-                <a href="https://masapmsa.github.io/masaweb/">
-                    <div class="overlay">
-                        <i class='bx bx-show'></i>
-                    </div>
-                </a>
-            </div>
-            <div class="work-content">
-                <img src="images/masaFest_web.png" alt="">
-                <a href="https://pmsamasa.github.io/fest/">
-                    <div class="overlay">
-                        <i class='bx bx-show'></i>
-                    </div>
-                </a>
-            </div>
+        <div>
+          <i class="fa-solid fa-window-restore"></i>
+          <h2>M S PowerPoint</h2>
+          <p>Designing impactful presentations with engaging visuals and structured content to effectively convey your
+            ideas and messages.</p>
+          <a href="#">Lern more</a>
         </div>
-    </section>
-    <!-- EDUCATION -->
-    <section class="education" id="education">
-        <h3 class="title"><i class='bx bx-book-open'></i>EDUCATION</h3>
-        <div class="row">
-            <div class="column">
-                <div class="education-content">
-                    <div class="year"><i class='bx bx-time'></i>2022-2024</div>
-                    <h2>P M S A Wafy College</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique sunt numquam ut asperiores
-                        consectetur quas, quae delectus. Cum, ducimus aperiam?</p>
-                </div>
-                <div class="education-content">
-                    <div class="year"><i class='bx bx-time'></i>2020-2022</div>
-                    <h2>Vadi Husna Wafy college</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique sunt numquam ut asperiores
-                        consectetur quas, quae delectus. Cum, ducimus aperiam?</p>
-                </div>
-            </div>
-            <div class="column">
-                <div class="education-content">
-                    <div class="year"><i class='bx bx-time'></i>2017-2020</div>
-                    <h2>P T M HS Kodiyathur</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique sunt numquam ut asperiores
-                        consectetur quas, quae delectus. Cum, ducimus aperiam?</p>
-                </div>
-                <div class="education-content">
-                    <div class="year"><i class='bx bx-time'></i>2022-2024</div>
-                    <h2>I G N O U</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique sunt numquam ut asperiores
-                        consectetur quas, quae delectus. Cum, ducimus aperiam?</p>
-                </div>
-            </div>
+      </div>
+    </div>
+  </section>
+  <!-- -------------------------------  services end ----------------------------------------------------------------------->
+
+  <!-- -------------------------------  Portfolio start ----------------------------------------------------------------------->
+
+  <section id="portfolio">
+    <div class="container">
+      <h1 class="sub-title">My Works</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="images/masaSiteFull.png" alt="">
+          <div class="layer">
+            <h3>M A S A Official websites</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum suscipit ipsum vel enim pariatur minus
+              repellendus excepturi eum sit placeat?</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
         </div>
-    </section>
-    <!-- CONTACT PAGE -->
-    <section class="contact" id="contact">
-        <h3 class="title"><i class='bx bx-headphone'></i>CONTACT ME</h3>
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name">
-                <input type="email" placeholder="Email">
-            </div>
-            <div class="input-box">
-                <input type="tel" placeholder="Mobile Number">
-                <input type="text" placeholder="Subject For">
-            </div>
-            <textarea name="" id="" cols="30" rows="10" placeholder=" Message"></textarea>
-            <input type="button" value="Send Message" class="btn">
-        </form>
-    </section>
-    <footer>
-        <div class="text-footer">
-            <p>Copyright @ 2024 by MSKC</p>
+        <div class="work">
+          <img src="images/masafestFull.png" alt="">
+          <div class="layer">
+            <h3>Pothu Way Creative resistance</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum suscipit ipsum vel enim pariatur minus
+              repellendus excepturi eum sit placeat?</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
         </div>
-    </footer>
-    <a href="#" class="bottom-to-top"><i class='bx bx-up-arrow-alt'></i></a>
-    <script src="script.js"></script>
+        <div class="work">
+          <img src="images/RaeesPortfolio.png" alt="">
+          <div class="layer">
+            <h3>Portfolio website</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum suscipit ipsum vel enim pariatur minus
+              repellendus excepturi eum sit placeat?</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#portfolio" class="btn">See More</a>
+    </div>
+  </section>
+
+  <!-- -------------------------------  Portfolio end ----------------------------------------------------------------------->
+
+  <!-- -------------------------------  Contact start ----------------------------------------------------------------------->
+
+  <section id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><a href="mailto:mskc9539@gmail.com"><i class="fa-solid fa-paper-plane"></i></a> mskc9539@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i> +91 9745524214</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="https://wa.me/+919745524214"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.instagram.com/m____s____k__c/"><i class="fab fa-instagram"></i></a>
+            <a
+              href="https://www.linkedin.com/in/muhammed-salih-kc-881300215?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                class="fab fa-linkedin"></i></a>
+          </div>
+          <a href="images/my-cv.pdf" download class="btn btn-2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="text" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn-2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright © Salih <i class="fa-solid fa-graduation-cap"></i> All Rights Reserved</p>
+    </div>
+  </section>
+
+  <!-- -------------------------------  Contact end ----------------------------------------------------------------------->
+
+  <script src="script.js"></script>
 </body>
 
 </html>

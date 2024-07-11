@@ -1,30 +1,57 @@
-const section = document.querySelectorAll('section');
-        const navLink = document.querySelectorAll('header nav a');
-        window.onscroll = () => {
-            section.forEach(sec => {
-                let top = window.scrollY;
-                let offset = sec.offsetTop - 150;
-                let height = sec.offsetHeight;
-                let id = sec.getAttribute('id');
-                if (top > offset && top < offset + height) {
-                    navLink.forEach(links => {
-                        links.classList.remove('active')
-                        document.querySelector('header nav a[href*=' + id + ']').classList.add('active')
-                    })
-                }
-            })
-            var header = document.querySelector('.header')
-            header.classList.toggle('sticky', window.scrollY > 100);
-            menubar.classList.remove('bx-x');
-            navbar.classList.remove('active')
-        }
-        let menubar = document.querySelector('#menu');
-        let navbar = document.querySelector('.navbar');
-        menubar.onclick = () => {
-            menubar.classList.toggle('bx-x');
-            navbar.classList.toggle('active');
-        }
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
 
-function readmore() {
-    alert("nothing to read more now !!");
+function opentab(tabname) {
+
+  for (tablink of tablinks) {
+    tablink.classList.remove("active-link");
+  }
+  for (tabcontent of tabcontents) {
+    tabcontent.classList.remove("active-tab");
+  }
+
+  event.currentTarget.classList.add("active-link");
+  document.getElementById(tabname).classList.add("active-tab");
 }
+
+
+var sidemenu = document.getElementById("sidemenu");
+
+function openmenu() {
+  sidemenu.style.right = '0';
+}
+function closemenu() {
+  sidemenu.style.right = '-200px';
+}
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbywbQHaBYLAjPUM5wFp_ea_UOAdISP9QTlUpvtHST3myeBZPw-6uI3gVibodSacEm4P/exec'
+const form = document.forms['submit-to-google-sheet']
+const msg = document.getElementById("msg");
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then(response => {
+      msg.innerHTML = "Message sent Successfully :) ";
+      setTimeout(function(){
+        msg.innerHTML = "" ;
+      },5000)
+      form.reset();
+    })
+    .catch(error => console.error('Error!', error.message))
+})
+
+var herobg = document.getElementById("hero-bg");
+
+window.addEventListener('scroll', function() {
+  // Get the current scroll position
+  var scrollPosition = window.scrollY;
+  
+  if (scrollPosition > 1000) {
+    herobg.style.display = "none";
+  }else{
+    herobg.style.display = "block";
+  }
+  // Log the scroll position
+  // console.log('Scroll Position: ' + scrollPosition);
+});
